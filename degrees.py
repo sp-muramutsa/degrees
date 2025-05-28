@@ -100,7 +100,7 @@ def shortest_path(source, target):
         return []
 
     start_node = Node(state=source, parent=None, action=None)
-    frontier = QueueFrontier()
+    frontier = StackFrontier()
     frontier.add(start_node)
 
     goal_state = target
