@@ -93,14 +93,14 @@ def shortest_path(source, target):
     """
 
     # TODO
-    # DFS
+    # BFS
 
     # Same actor
     if source == target:
         return []
 
     start_node = Node(state=source, parent=None, action=None)
-    frontier = StackFrontier()
+    frontier = QueueFrontier()
     frontier.add(start_node)
 
     goal_state = target
